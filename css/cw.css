@@ -47,7 +47,7 @@ text-decoration: none;
 }
 :root {
     --primary-red: #dc3545;
-    --just-red:red
+    --just-red: var(--primary-red)
 }
 html, body{
     color: var(--primary-red);
