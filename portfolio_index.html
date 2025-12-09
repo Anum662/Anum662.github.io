@@ -1,68 +1,262 @@
-<html>
-    <head>
-<title> my first website </title>
-<link rel="stylesheet" href="css/cw.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Momo+Signature&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Anum Rehan – UX/UI Designer Portfolio</title>
+    
 
-<style> 
-   
-</style>
-    </head>
-    <body>
-<H1 id="heading1"> <u>Hello World</u></H1>
-<p class="text-pink text-para"> Nam lacinia lacus vestibulum, tempus lectus et, faucibus neque. Suspendisse sed ligula a ante auctor malesuada. Pellentesque blandit quis nibh sit amet tristique. Quisque tristique erat pellentesque massa vehicula ullamcorper nec ut augue. Vivamus consequat at turpis sed vestibulum. Fusce hendrerit tempor tincidunt. Suspendisse potenti. Nullam vitae <a href="https://mcgill.ca/sis">pulvinar</a> mauris. Ut nec ante sapien. </p>
-<H2 class="text-pink text-background-yellow"> Anum</H2>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
 
-<hr>
-<a href="http://mcgill.ca" target="_blank">Link to website</a>
-<img src="img/Me.jpeg" width="100" height="100">
-<BR>
-<iframe src="img/RehanAnum_MomentFactory_CV.pdf" title="Sample pdf" height="500" width="500"></iframe>
-<BR>
-<video autoplay muted controls>
-    <source src="img/Test Video.mp4"> type="video/mp4">
-</video>
-<audio controls>
-    <source src="https://www.w3schools.com/html/horse.mp3"
-   type="audio/mpeg">
-   </audio>
-   <ul> <li>Point 1</li>
-<li>Point 2</li>
-<li>Point 3</li>
-</ul>
-<ol> <li>Point 1</li>
-    <li>Point 2</li>
-    <li>Point 3</li>
-    </ol>
-    <dl><dt>Title 1</dt>
-    <dd>this is description for title 1</dd></dl>
-    <dl><dt>Title 2</dt>
-        <dd>this is description for title 2</dd></dl>
-        <dl><dt>Title 3</dt>
-            <dd>this is description for title 3</dd></dl>
-            <!-- This is a comment -->
-    <p>&#65; &#129409; &#169;</p>
-    <table border="1">
-        <tr>
-        <th>Company</th>
-        <td colspan="2"></td> Contact</td>
-       
-        </tr>
-        <tr>
-        <th>Alfreds Futterkiste</th>
-        <td>Maria Anders</td>
-        <td>Germany</td>
-        </tr>
-        <tr>
-        <th>Centro comercial Moctezuma</th>
-        <td>Francisco Chang</td>
-        <td>Mexico</td>
-        </tr>
-       </table>
-       <form>
-        <input type="text" name="anum">
-        </form>
-    </body>
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/cw.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ========================= NAVBAR ========================= -->
+<nav class="custom-nav fixed-top">
+    <div class="container nav-container">
+
+    
+         <!-- LOGO WITH ANIMATED BUBBLES -->
+<div class="nav-left logo-bubbles">
+    <span class="logo-text">AR</span>
+
+    <!-- floating bubbles -->
+    <span class="bubble b1"></span>
+    <span class="bubble b2"></span>
+    <span class="bubble b3"></span>
+</div>
+
+
+        <!-- CENTER: NAV LINKS -->
+        <div class="nav-center">
+            <a href="#home" class="nav-item">Home</a>
+            <a href="#about" class="nav-item">About</a>
+            <a href="#projects" class="nav-item">Projects</a>
+            <a href="#fun" class="nav-item">Fun</a>
+            <a href="#skills" class="nav-item">Skills</a>
+            <a href="#contact" class="nav-item">Contact</a>
+        </div>
+
+        <!-- RIGHT: CTA BUTTON -->
+        <div class="nav-right">
+            <a href="mailto:anumrehan5@outlook.com" class="nav-btn">Schedule a Call</a>
+        </div>
+
+    </div>
+</nav>
+
+<!-- ========================= HERO (BLOW-OUT IMAGE) ========================= -->
+<section id="home" class="hero-section">
+
+    <div class="hero-content container">
+
+        <!-- LEFT: TEXT -->
+        <div class="hero-text">
+            <h1 class="hero-title">Hi, I'm Anum</h1>
+            <p class="hero-subtitle">
+                UX/UI Designer · Information Studies · Research-Driven Design
+            </p>
+            <p class="hero-description">
+                I create intuitive, human-centered digital experiences through research,
+                accessibility principles, and thoughtful interaction design.
+            </p>
+
+            <a href="#projects" class="hero-btn">View My Work</a>
+        </div>
+
+        <!-- RIGHT: BLOW-OUT IMAGE -->
+        <div class="hero-photo-wrapper">
+            <img src="Asset /AnumRehan.jpeg" class="hero-photo-blowout" alt="Portrait of UX/UI designer Anum Rehan">
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= ABOUT ========================= -->
+ <section id="about" class="about-section-box">
+
+  <div class="about-box">
+    <h2 class="about-title">About Me</h2>
+
+    <div class="role-chips">
+      <div class="chip">
+        <span class="chip-title">Designer</span>
+        <span class="chip-desc">Interaction design, visual systems, accessibility patterns.</span>
+      </div>
+
+      <div class="chip">
+        <span class="chip-title">Researcher</span>
+        <span class="chip-desc">User studies, qualitative insights, cognitive load analysis.</span>
+      </div>
+
+      <div class="chip">
+        <span class="chip-title">Educator</span>
+        <span class="chip-desc">Communication, workshops, simplifying complex ideas.</span>
+      </div>
+    </div>
+
+    <p class="about-main">
+      I design intuitive, human-centered digital experiences by blending research, accessibility, and information architecture.
+    </p>
+  </div>
+
+</section>
+
+<!-- ========================= PROJECTS ========================= -->
+<section id="projects" class="projects-section fade-in">
+<div class="container">
+
+
+<h2 class="section-title text-center mb-5">Projects</h2>
+
+
+<div class="projects-grid">
+
+
+<!-- ================= CHRONO APP TILE ================= -->
+
+<div class="project-tile chrono-tile" onclick="window.location.href='chrono.html'">
+    <img src="Asset /chrono .jpeg" class="project-thumb" alt="Chrono app project thumbnail">
+    <h3>Chrono App</h3>
+    <p>Redesigning the route planning experience.</p>
+</div>
+
+
+<!-- ================= OTHER PROJECT TILES  ================= -->
+ <!-- ================= These are just project placeholders  ================= -->
+
+            <div class="project-tile">
+                <h3>Google Maps</h3>
+                <p>Transit UI improvements for accessibility.</p>
+            </div>
+
+            <div class="project-tile">
+                <h3>Ambient Academic Compass</h3>
+                <p>Calm-tech tool for student productivity.</p>
+            </div>
+
+            <div class="project-tile">
+                <h3>Smart Object Finder</h3>
+                <p>Helping older adults locate essentials.</p>
+            </div>
+
+            <div class="project-tile">
+                <h3>ADiNA</h3>
+                <p>Digital support system for engineering teams.</p>
+            </div>
+
+            <div class="project-tile">
+                <h3>Mindbridge</h3>
+                <p>Information architecture & UX review.</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ========================= FUN FACTS ========================= -->
+<section id="fun" class="fun-section">
+
+    <h2 class="fun-title">When I'm not decoding human behaviour, you can find me:</h2>
+
+    <div class="fun-cards">
+
+        <div class="fun-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/4151/4151815.png" alt="Tea cup icon">
+
+            <p>Sipping Tea</p>
+        </div>
+
+        <div class="fun-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/482/482947.png" alt="a black envelope">
+            <p>Creating AR Filters</p>
+        </div>
+
+        <div class="fun-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/3062/3062634.png" alt="a blue envelope">
+            <p>Reading Psychology</p>
+        </div>
+
+        <div class="fun-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/706/706164.png" atl="image showing food items">
+            <p>Organizing My Space</p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ========================= FEATURED SKILLS ========================= -->
+<section id="skills" class="skills-section">
+
+    <h2 class="section-title">Featured Skills</h2>
+
+   <div class="skills-box">
+
+    <div class="skill-shape yellow rotate-small">Empathy</div>
+    <div class="skill-shape blue rotate-medium">Active Listening</div>
+    <div class="skill-shape pink rotate-small">Concept Testing</div>
+    <div class="skill-shape green rotate-large">User Interviews</div>
+    <div class="skill-shape purple rotate-small">Usability Testing</div>
+    <div class="skill-shape mint rotate-medium">Evaluative Research</div>
+
+    <div class="skill-shape orange rotate-large">Surveys</div>
+    <div class="skill-shape teal rotate-small">Discovery</div>
+    <div class="skill-shape peach rotate-medium">Communication</div>
+
+</div>
+
+</section>
+
+
+
+
+<!-- ========================= CONTACT ========================= -->
+<section id="contact" class="contact-banner-section">
+
+    <div class="contact-banner">
+        <div class="contact-text">
+            <h2>Got a Project<br>in Mind?</h2>
+            <p>I'd love to collaborate! Drop me a message or connect on LinkedIn 🌼</p>
+
+            <div class="contact-buttons">
+                <a href="mailto:anumrehan5@outlook.com" class="contact-btn">Email</a>
+                <a href="https://linkedin.com/in/anum-rehan-179a04327" target="_blank" class="contact-btn">LinkedIn</a>
+            </div>
+        </div>
+
+        <div class="contact-illustration">
+    <img src="Asset /Mailbox.png" alt="Overwhelmed Mailbox">
+</div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ========================= FOOTER ========================= -->
+<footer class="footer text-center py-4">
+    <p class="footer-text">© 2025 Anum Rehan</p>
+</footer>
+
+
+
+<script src="JS/portfolio.js"></script>
+
+
+</body>
 </html>
+
+
+
